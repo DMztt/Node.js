@@ -11,7 +11,7 @@
 ### 二、 MongoDB安装
 
 1. ​	下载地址 ： https://www.mongodb.com/download-center/community 
-   - 这里还需要下载 MongoDB Compass （可以对数据尽心可视化操做）  
+   - 这里还需要下载 MongoDB Compass （可以对数据进行可视化操做）  
 
 ### 三 、数据库相关概念 
 
@@ -529,7 +529,7 @@ mongoose.connect('mongodb://localhost/playground',{ useNewUrlParser: true ,useUn
 
 ### 十四、案例练习
 
-- #### 用户的增删改查操做
+- #### 用户的增删改查操做  
 
 - | 1.搭速网站服务器，实现客户端与服务器端的通信                 |
   | :----------------------------------------------------------- |
