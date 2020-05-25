@@ -39,6 +39,8 @@
 
 - 使用mongoose提供的connect方法就可以连接数据库（这个方法返回一个promise对象）
 
+  - 数据库默认连接端口27017
+  
   - ````js
     mongoose.connect('mongodb://localhost/playground') // playground为地址
     .then(() => {
@@ -46,11 +48,11 @@
     })
     .catch((err) => {
         console.log(err, "数据库连接失败")
-    })
+  })
     ````
 
   - 引入mongoose   
-
+  
   - ````js
     const mongoose = require('mongoose')
     
@@ -173,14 +175,14 @@ const Course = mongoose.model('Course', courseSchema);
    mongoimport -d playground -c users --file ./data.json
    
    //终端显示这个 表示导入成功
-   E:\node_text\database> mongoimport -d playground -cusers --file ./data.json
+   E:\node_text\database> mongoimport -d playground -c users --file ./data.json
    2020-05-23T23:32:38.153+0800    connected to: mongodb://localhost/
    2020-05-23T23:32:38.878+0800    1 document(s) imported successfully. 0 document(s) failed to import.
    
    E:\node_text\database>
    ````
 
-3. ![1590248143038](C:\Users\NB\Desktop\1111111111111111.png)
+3. ![1590248143038](E:\web笔记\Node笔记\mongoDB\1.png)
 
 ### 九、MongoDB查询你文档
 
@@ -235,7 +237,7 @@ test.save()
  })
 ````
 
-![1590279513736](C:\Users\NB\AppData\Roaming\Typora\typora-user-images\1590279513736.png)
+![1590279513736](E:\web笔记\Node笔记\mongoDB\2.png)
 
 #### 3.  findOne返回一条文档，默认返回当前集合第一条文档
 
@@ -264,7 +266,7 @@ E:\node_text\database>node 04.js
 
 #### 4. 通过区间查询文档数据
 
-![1590281522685](C:\Users\NB\AppData\Roaming\Typora\typora-user-images\1590281522685.png)
+![1590281522685](E:\web笔记\Node笔记\mongoDB\3.png)
 
 ````js
 //查询年龄大于20小于50之间的
